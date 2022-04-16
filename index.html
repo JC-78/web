@@ -7,6 +7,7 @@
         <meta name="viewport" content="widty=device-width,initial-scale=1">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="icon" href="cool_icon.png">
+        <script src="https://kit.fontawesome.com/3db456b4e5.js" crossorigin="anonymous"></script>
         <link 
   href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
   rel="stylesheet"  type='text/css'>
@@ -65,7 +66,20 @@
                 width: 50%;
                 }
             /* BODY */
-    
+            
+            .left-mid{
+                text-align:center;
+                margin-left: auto;
+                margin-right: auto;
+                width:25%;
+            }
+
+            .right-mid{
+                text-align:center;
+                margin-left: auto;
+                margin-right: auto;
+                width:75%;
+            }
             .content {
                 width: 80%;
                 margin-left: 10%;
@@ -78,10 +92,20 @@
         <div class="nav-bar">
             <a href="index.html" class="element"> Home </a>
             <a href="index.html" class="element"> Work Experience </a>
+            $(“.button”).click( function() {
+            windowlocation.href = "https://jc-78.github.io/web/#workexperience"; } );
             <a href="index.html" class="element"> Research Experience </a>
+            $(“.button”).click( function() {
+            windowlocation.href = "https://jc-78.github.io/web/#researchexperience"; } );
             <a href="index.html" class="element"> Personal Projects </a>
+            $(“.button”).click( function() {
+            windowlocation.href = "https://jc-78.github.io/web/#personalprojects"; } );
             <a href="index.html" class="element"> Bio </a>
+            $(“.button”).click( function() {
+            windowlocation.href = "https://jc-78.github.io/web/#bio"; } );
             <a href="index.html" class="element"> Contacts </a>
+            $(“.button”).click( function() {
+            windowlocation.href = "https://jc-78.github.io/web/#contacts"; } );
             
         </div>
 
@@ -90,20 +114,24 @@
         <pre>  </pre>
 
         <img src="cameleon_wave.jpg" alt="My Mascot" class="center">
-
-            <i class="fa-solid fa-quote-left"></i>
+            <left-mid>
+            <i class="fa-solid fa-quote-left" ></i>
+            </left-mid>
                 <p align="center">Talent is long patience, and originality an effort of will and of intense observation.</p>
                 <footer align="center">
                     — <cite><a href="https://www.liveabout.com/artists-quotes-talent-2577437">Gustav Flaubert, French novelist</a></cite>
                 </footer>
 
+                <pre>  </pre>
+        <right-mid>
             <i class="fa-solid fa-quote-right"></i>
-
+        </right-mid>
+        
             <pre>  </pre>
             <pre>  </pre>
             <pre>  </pre>
 
-          <h1 style="padding: 0 15px">Work Experience</h1>
+          <h1 id="workexperience" style="padding: 0 15px">Work Experience</h1>
 
           <p style="padding: 0 15px">Behaivior, Software Development and Data Science Intern(Awarded CMU Dietrich Scholarship)                         May–Aug 2021<br>
 •	Developed deep auto-encoders and used PCA, T-SNE, UMAP, PaCMAP for data visualization of opioid craving relapses.<br>
@@ -122,7 +150,7 @@
 •	Developed the inference pipelines for classification models, via Azure ML studio and Google Cloud AutoML Vision, and deployed them to assist navigation team and lookouts in identifying potential hazards, such as submarines.</p>
     <a>
     <img alt="Navy" src="navy.png"
-    width=100" height="180" style="padding: 0 15px" class="center">
+    width="70" height="300" style="padding: 0 15px" class="center">
     </a>
     
     <p style="padding: 0 15px">Yuuzoo Corp, Marketing Department, Singapore. Data Analyst Intern                                                                    May – Aug 2016<br>                
@@ -130,7 +158,7 @@
 •	Optimized MySQL database performance by indexing, schema design and memory caching to deal with scale and improve throughput, while strengthening the database against SQL injections.</p>
 
 
-          <h1 style="padding: 0 15px">Research Experience</h1>
+          <h1 id="researchexperience" style="padding: 0 15px">Research Experience</h1>
           <p style="padding: 0 15px">
           •	Built parallel computing solutions for competitive-pricing constrained optimization algorithms and researched graphical lasso’s use in estimating a sparse substitution matrix in product network with Zoey Jiang (CMU Prof. of Business Tech).    July 2021-Sept 2021<br>
         </p>
@@ -141,20 +169,20 @@
         
         
             <img alt="FixMatch" src="FixMatch.png"
-            width=100" height="180" style="padding: 0 15px" class="center">
+            width=100" height="250" style="padding: 0 15px" class="center">
 
          <p style="padding: 0 15px">
           •	Coded video data for behavioral and speech recognition in CMU BAR (Behavioral Alcohol Research) study.      Oct 2019-Dec 2020<br>
         </p>
 
-          <h1 style="padding: 0 15px">Personal Projects/Portfolio</h1>
+          <h1 id="personalprojects" style="padding: 0 15px">Personal Projects/Portfolio</h1>
           <p style="padding: 0 15px">
           •	Developed and optimised neural network, KNN, SVM to help junior hockey teams predict and maximize their scoring potentials.   Mar-May 2021<br>
           •	Led a team of 5 engineers in developing a COVID_19 Mobile Application for Elizabeth Glaser Pediatric Aids Foundation via PowerApps.  Sep-Dec 2020<br>
           •	Led a team of 8 engineers in developing a 2D Unity zombie shooter game with complex game AI and vast maps through Scrum methodology. Aug-Dec 2020<br>
           </p>
 
-          <h1 style="padding: 0 15px"> Bio: About Me</h1>
+          <h1 id="bio" style="padding: 0 15px"> Bio: About Me</h1>
 
           <p style="padding: 0 15px">
             I am a medal of military honour recipient and also a SBVPO(Student Body Vice President of organizations) at Carnegie Mellon majoring in Statistics & Machine Learning with two intended minors in Human-Computer Interaction and Business Analytics & Optimisation. Moreover, I am not only one of CMU's Quantitative Social Science Scholars of 2023, but also a tech director of CMU Business Technology Group.
@@ -162,7 +190,7 @@
             I am deeply interested in pursuing careers related to applied data science, machine learning, and consulting. My working experiences include data analysis at Yuuzoo Corp(E-commerce company), SWE and ML engineering at Singapore Armed Forces, software development and data science at Behaivior. During my free time, I work as a freelance programmer/analyst/translator.
           </p>
 
-          <h1 style="padding: 0 15px">Contacts</h1>
+          <h1 id="contacts" style="padding: 0 15px">Contacts</h1>
 
           <a href="https://www.linkedin.com/in/joshua-choi-84b958201/">
             <img alt="Linkedln" src="LinkedIn.png"
