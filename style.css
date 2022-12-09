@@ -1,0 +1,91 @@
+.myDiv {
+    border: 5px outset blue;
+    background-color: lightblue;    
+    text-align: center;
+    /*padding:10px*/
+  }
+
+  body {
+      margin: 0;
+  }
+
+  /* NAV BAR */
+
+  .nav-bar {
+      width: 100%;
+      height: 50px;
+      margin: 0;
+      background: black;
+
+      /* Toggle between static and sticky */
+
+      position: sticky;
+      top: 0; 
+  }
+  
+  .nav-bar > .element {
+      width: 15.5%;
+      line-height: 50px;
+      text-align: center;
+      color: white;
+      display: inline-block;
+      margin: 0;
+      font-family: Arial;
+      font-size:10px;
+      text-decoration: none;
+  }
+
+
+  .nav-bar > .element:hover { 
+        text-decoration: underline;
+        background-color:grey;
+  }	
+
+  .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      }
+  /* BODY */
+  
+  .quote1{
+      width:25%;
+      display: inline-block;
+      height:50px;
+      vertical-align:top;
+  }
+
+  .quote2{
+      width:75%;
+      display: inline-block;
+      height: 50px;
+      vertical-align: bottom;
+  }
+  .content {
+      width: 80%;
+      margin-left: 10%;
+  }
+
+  .outer{
+      text-align: center
+  }
+
+  .moving-left{
+      /*height: 100px;*/
+      position: relative;
+      transition: transform 0.3s ease;
+      transform: translateX(0px);
+      /*width: 100px;*/
+  }
+  .moving-left:hover{
+      transform: translate(5%,5%);
+  }
+
+  .center-box{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: center;
+      background: gray;
+  }
