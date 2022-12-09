@@ -87,5 +87,8 @@
       margin-left: auto;
       margin-right: auto;
       width: center;
-      background: gray;
+      /*background: linear-gradient(to bottom right,white, blue);*/
+      background: linear-gradient(to right,white,rgba(0,0,255,0.5),white);
   }
+
+  
