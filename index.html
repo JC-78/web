@@ -91,6 +91,17 @@
             .outer{
                 text-align: center
             }
+
+            .moving-left{
+                height: 100px;
+                position: relative;
+                transition: transform 0.3s ease;
+                transform: translateX(0px);
+                width: 100px;
+            }
+            .moving-left:hover{
+                transform: translateX(10px);
+            }
     
         </style>
     </head>
@@ -156,7 +167,10 @@
 •	Built regression models using machine learning algorithms (Lasso, Ridge, ElasticNet, Random Forest) and applied optimization techniques to raise the firing accuracy of A-gun on a Tank Landing Ship of Republic of Singapore Navy.<br>
 •	Developed the inference pipelines for classification models, via Azure ML studio and Google Cloud AutoML Vision, and deployed them to assist navigation team and lookouts in identifying potential hazards, such as submarines.</p>
     <a>
-    <img alt="Navy" src="navy.png" style="padding: 0 15px" class="center">
+    <div class="moving-left">
+        <img alt="Navy" src="navy.png" style="padding: 0 15px" class="center">
+    </div>
+    
     </a>
     
     <p style="padding: 0 15px">Yuuzoo Corp, Marketing Department, Singapore. Data Analyst Intern                                                                    May – Aug 2016<br>                
