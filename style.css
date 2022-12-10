@@ -47,6 +47,18 @@
       margin-right: auto;
       width: 50%;
       }
+
+    .center-circle {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width:300px;
+        height:300px;
+        object-fit:cover;
+        border-radius:50%;
+        }
+
+
   /* BODY */
   
   .quote1{
@@ -112,3 +124,22 @@
     max-width: 100%;
   }
 
+
+  .column {
+    float: left;
+    width: 31.33%;
+    padding: 5px;
+  }
+
+  .column1 {
+    float: right;
+    width: 10%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
