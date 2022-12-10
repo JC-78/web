@@ -57,6 +57,9 @@
         object-fit:cover;
         border-radius:50%;
         }
+    .center-circle:hover {
+            transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+          }
 
 
   /* BODY */
@@ -123,6 +126,9 @@
     box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
     max-width: 100%;
   }
+  .grid img:hover{
+    transform: scale(1.15);
+}
 
 
   .column {
@@ -134,9 +140,9 @@
   .column1 {
     float: right;
     width: 10%;
-    padding: 5px;
+    padding: 7px;
   }
-  
+
   /* Clear floats after image containers */
   .row::after {
     content: "";
