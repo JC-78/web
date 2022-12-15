@@ -115,6 +115,15 @@
     background: linear-gradient(to right,white,rgba(207,159,255,0.5),white);
 }
 
+.center-box2{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: center;
+  /*background: linear-gradient(to bottom right,white, blue);*/
+  background: linear-gradient(#e66465, #9198e5);
+}
+
   .grid { 
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
